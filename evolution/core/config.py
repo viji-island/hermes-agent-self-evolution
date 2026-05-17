@@ -18,9 +18,9 @@ class EvolutionConfig:
     population_size: int = 5
 
     # LLM configuration
-    optimizer_model: str = "openai/gpt-4.1"  # Model for GEPA reflections
-    eval_model: str = "openai/gpt-4.1-mini"  # Model for LLM-as-judge scoring
-    judge_model: str = "openai/gpt-4.1"  # Model for dataset generation
+    optimizer_model: str = "hermes/gpt-5.4"  # Model for GEPA reflections via Hermes bridge
+    eval_model: str = "hermes/gpt-5.4"  # Model for LLM-as-judge scoring via Hermes bridge
+    judge_model: str = "hermes/gpt-5.4"  # Model for dataset generation via Hermes bridge
 
     # Constraints
     max_skill_size: int = 15_000  # 15KB default
